@@ -489,6 +489,7 @@ for (let i = 0; i < arr.length; i++){
     const faculity = arr[i].info.faculity.toUpperCase().trim();
     const category = categories.find(lesson => lesson.course.trim() === faculity);
     if (category){
+        
         category.count++;
     }
 }
